@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 int max_n = 100,max_m = 100;
-//max_m based on maximum weight
+//max_m based on total weight
 //max_n based number of weights
-//memo is vector of n_weights * weights
+//memo is vector of n_weights * total_weight
 vector<vector<int>> memo(max_n,vector<int> (max_m,-1));
 int knapsack(vector<int> reward,vector<int> weight, int w , int n){
 	if (n==0 || w == 0){
