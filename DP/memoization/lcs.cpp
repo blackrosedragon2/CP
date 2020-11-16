@@ -28,8 +28,9 @@ int lcs_repeating(string s1, string s2, int m , int n){
 	return memo[m-1][n-1];
 }
 int main(){
-
-	cout<<"LCS OF GEEK AND EFGEK IS "<<lcs("geek","efgek",4,5)<<endl;
+	string s1 = "ccdbaeeceecabaacebcaebdceaacdcdcbbadcebcaaceaebcdacccaedcbccacedaacdbaaeacdbeedccceeabececcc";
+	string s2 = "ebcadedcedbacedbaddccabcddceaedecbbbaedcebecaeaacbdbdbededcbcbdbceeebcbaaceabcbadbcdcdbebdaa";
+	cout<<"LCS OF S1 AND S2 IS "<<lcs(s1,s2,s1.length(),s2.length())<<endl;
 	string str = "helloh",str2=str;
 	reverse(str.begin(),str.end());
 	cout<<"PALNDROMIC LCS OF helloh IS "<<lcs(str,str2,str.length(),str2.length())<<endl;
